@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>حركة لسان | الرئيسية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Naskh+Arabic:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="imgs/7L_logo.png" alt="شعار الموقع" />
+      <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="morning.html">أذكار الصباح</a>
+        <a href="evening.html">أذكار المساء</a>
+        <a href="about.html">عنا</a>
+        <a href="refs.html">المراجع</a>
+      </nav>
+      <button class="dark-toggle" onclick="toggleDark()">🌙</button>
+    </header>
+
+    <!-- Main container -->
+    <div class="container" id="content">
+      <h1>حركة لسان</h1>
+      <p style="text-align: center">
+        ✨ موقع للأذكار اليومية، صُمّم ليُعينك على دوام ذكر الله وتنظيم وردك
+        بروحٍ سهلة وبسيطة. طريقتنا في تحديد عدد أذكار الصباح والمساء تهدف إلى
+        تقوية من يضعف عن المداومة، لا إلى تضعيف من هو قوي في قراءة أذكاره.
+        المشروع ثمرة جهد طالبان: أحدهما متخصص في علوم الحاسب والآخر في الشريعة،
+        لنمزج التقنية بالعلم الشرعي في خدمة ذكر الله. 🌿
+      </p>
+
+      <!-- FAQ Section -->
+      <div class="faq">
+        <h2>الأسئلة الشائعة</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">لماذا ألتزم بالأذكار اليومية؟</button>
+          <div class="faq-answer">
+            <p>
+              الأذكار حماية للنفس, وطمأنينة للقلب، وزيادة للبركة في اليوم,
+              وللتقرب إلى الله عز وجل.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">ما الذي يميّز موقعنا؟</button>
+          <div class="faq-answer">
+            <p>
+              يتميّز بتوضيح فضائل الأذكار؛ ليتحفّز القارئ على قراءة الذكر ويقطع
+              الفتور, كما يوفر مجموعات مرنة مقسمة حسب طاقة القارئ ووقته, وهذا
+              مما يساعد القارئ بمداومته على قراءة الأذكار.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">هل يلزمني قراءة الأذكار كاملة؟</button>
+          <div class="faq-answer">
+            <p>
+              لا يلزمك, ويكفي أن تقرأ ولو ذكر واحد حسب الاستطاعة فالمهم هو
+              المداومة على قراءة الأذكار.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">هل الأذكار في الموقع موثوقة؟</button>
+          <div class="faq-answer">
+            <p>
+              نعم، جميع الأذكار مستندة إلى مصادر صحيحة وموثوقة مذكورة في قسم
+              المراجع.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>جميع الحقوق محفوظة © حركة لسان 2025</footer>
+
+    <script>
+      function toggleDark() {
+        document.body.classList.toggle("dark-mode");
+      }
+
+      // FAQ accordion
+      document.querySelectorAll(".faq-question").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const item = btn.parentElement;
+          item.classList.toggle("active");
+          // Close others
+          document.querySelectorAll(".faq-item").forEach((other) => {
+            if (other !== item) other.classList.remove("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

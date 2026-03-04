@@ -1,0 +1,26 @@
+1:
+
+
+:root {
+      --primary-bg: #FAF9F6;
+      --navbar-bg: #A9A17A;
+      --text-color: #333333;
+      --accent: #2E8B57;
+      --card-bg: rgba(255, 255, 255, 0.9);
+
+      /* dark mode */
+      --dark-bg: #1E1E1E;
+      --dark-card: #2C2C2C;
+      --dark-text: #F1F1F1;
+      --dark-navbar: #29271d;
+    }
+
+
+
+    --------------------------------------
+
+
+    2:
+
+
+    
