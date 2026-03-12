@@ -557,6 +557,61 @@ html.dark-mode button {
 
 
 /* -------------------------------------------- */
+/* Project Social Links */
+
+.project-socials {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 25px 0 35px;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background: var(--accent);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.16);
+  opacity: 0.95;
+}
+
+.social-btn .icon {
+  font-size: 1.1rem;
+}
+
+/* تلميح خفيف للمنصة بدل اللون الفاقع */
+
+.whatsapp-btn {
+  border: 2px solid rgba(37, 211, 102, 0.25);
+}
+
+.telegram-btn {
+  border: 2px solid rgba(34, 158, 217, 0.25);
+}
+
+/* Dark mode */
+
+html.dark-mode .social-btn {
+  background: var(--accent);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+}
+
+
+
+/* -------------------------------------------- */
 /* Refs */
 
 .refs-list {
